@@ -1,18 +1,15 @@
 {
-  "name": "@traderjoe-xyz/sdk",
+  "name": "@traderjoe-xyz/spruce-sdk",
   "license": "MIT",
-  "version": "4.0.6",
-  "description": "🛠 An SDK for building applications on top of Trader Joe.",
+  "version": "1.0.0",
+  "description": "Spruce SDK",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/traderjoe-xyz/joe-sdk",
-  "keywords": [
-    "traderjoe-xyz",
-    "avalanche"
-  ],
+  "repository": "https://github.com/traderjoe-xyz/spruce-sdk",
+  "keywords": [],
   "module": "dist/sdk.esm.js",
   "scripts": {
     "lint": "tsdx lint src test",
@@ -22,6 +19,7 @@
     "prepublishOnly": "tsdx build"
   },
   "dependencies": {
+    "@wagmi/core": "^1.3.5",
     "big.js": "^5.2.2",
     "decimal.js-light": "^2.5.0",
     "jsbi": "^3.1.1",
@@ -37,7 +35,7 @@
     "@types/jest": "^24.0.25",
     "babel-plugin-transform-jsbi-to-bigint": "^1.3.1",
     "tsdx": "^0.14.1",
-    "viem": "^0.3.31"
+    "viem": "^0.3.50"
   },
   "resolutions": {
     "tsdx/typescript": "^4.9.4",

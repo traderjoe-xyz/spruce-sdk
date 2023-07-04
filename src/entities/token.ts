@@ -69,41 +69,7 @@ export function currencyEquals(currencyA: Currency, currencyB: Currency): boolea
 
 export const WNATIVE = {
   [ChainId.FUJI]: new Token(ChainId.FUJI, '0xd00ae08403B9bbb9124bB305C09058E32C39A48c', 18, 'WAVAX', 'Wrapped AVAX'),
-  [ChainId.AVALANCHE]: new Token(
-    ChainId.AVALANCHE,
-    '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
-    18,
-    'WAVAX',
-    'Wrapped AVAX'
-  ),
-  [ChainId.ARBITRUM_ONE]: new Token(
-    ChainId.ARBITRUM_ONE,
-    '0x82aF49447D8a07e3bd95BD0d56f35241523fBab1',
-    18,
-    'WETH',
-    'Wrapped ETH'
-  ),
-  [ChainId.ARB_GOERLI]: new Token(
-    ChainId.ARB_GOERLI,
-    '0xaE4EC9901c3076D0DdBe76A520F9E90a6227aCB7',
-    18,
-    'WETH',
-    'Wrapped ETH'
-  ),
-  [ChainId.BNB_CHAIN]: new Token(
-    ChainId.BNB_CHAIN,
-    '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
-    18,
-    'WBNB',
-    'Wrapped BNB'
-  ),
-  [ChainId.BNB_TESTNET]: new Token(
-    ChainId.BNB_TESTNET,
-    '0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd',
-    18,
-    'WBNB',
-    'Wrapped BNB'
-  )
+  [ChainId.SPRUCE]: new Token(ChainId.SPRUCE, '0xA771A8C08F56C351C7dcF5f4e4Fb9f1d702D27C8', 18, 'WUSDCf', 'Wrapped USDCf')
 }
 
 export const WAVAX = WNATIVE

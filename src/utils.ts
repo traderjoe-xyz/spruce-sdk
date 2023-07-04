@@ -2,7 +2,8 @@ import invariant from 'tiny-invariant'
 import warning from 'tiny-warning'
 import JSBI from 'jsbi'
 import { createPublicClient, http, getAddress } from 'viem'
-import { arbitrum, arbitrumGoerli, avalanche, avalancheFuji, bsc, bscTestnet } from '@wagmi/chains'
+import { avalancheFuji } from '@wagmi/chains'
+import { avalancheSpruce } from './chains'
 
 import { BigintIsh, ZERO, ONE, TWO, THREE, SolidityType, SOLIDITY_TYPE_MAXIMA, ChainId } from './constants'
 
@@ -93,17 +94,9 @@ export const getDefaultPublicClient = (chainId: ChainId) => {
 
 export const getChain = (chainId: ChainId) => {
   switch (chainId) {
-    case ChainId.ARBITRUM_ONE:
-      return arbitrum
-    case ChainId.ARB_GOERLI:
-      return arbitrumGoerli
-    case ChainId.AVALANCHE:
-      return avalanche
     case ChainId.FUJI:
       return avalancheFuji
-    case ChainId.BNB_CHAIN:
-      return bsc
-    case ChainId.BNB_TESTNET:
-      return bscTestnet
+    case ChainId.SPRUCE:
+      return avalancheSpruce
   }
 }
