@@ -19,8 +19,8 @@ export const avalancheSpruce = {
   },
   contracts: {
     multicall3: {
-      address: '0xca11bde05977b3631167028862be2a173976ca11',
-      blockCreated: 11_907_934
+      address: '0x5CB6904C4c4518e7a28c385a20064dD5FFc70850',
+      blockCreated: 4541
     }
   }
 } as const satisfies Chain
