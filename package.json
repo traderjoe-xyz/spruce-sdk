@@ -1,7 +1,7 @@
 {
   "name": "@traderjoe-team/spruce-sdk",
   "license": "MIT",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Spruce SDK",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
