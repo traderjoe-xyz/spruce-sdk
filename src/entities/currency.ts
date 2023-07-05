@@ -39,8 +39,8 @@ export class NativeCurrency {
  */
 export class CNATIVE extends NativeCurrency {
   constructor(chainId: number) {
-    const symbol = [43113, 43114].includes(chainId) ? 'AVAX' : 56 === chainId ? 'BNB' : 97 === chainId ? 'tBNB' : 'ETH'
-    const name = [43113, 43114].includes(chainId) ? 'Avalanche' : [56, 97].includes(chainId) ? 'BNB' : 'Ethereum'
+    const symbol = [43113, 43114].includes(chainId) ? 'AVAX' : 56 === chainId ? 'BNB' : 97 === chainId ? 'tBNB' : 424242 === chainId ? 'USDCf' : 'ETH'
+    const name = [43113, 43114].includes(chainId) ? 'Avalanche' : [56, 97].includes(chainId) ? 'BNB' : 424242 === chainId ? 'USDCf' : 'Ethereum'
     super(chainId, 18, symbol, name)
   }
   public equals(other: NativeCurrency): boolean {
