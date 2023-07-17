@@ -22,5 +22,6 @@ export const avalancheSpruce = {
       address: '0x5CB6904C4c4518e7a28c385a20064dD5FFc70850',
       blockCreated: 4541
     }
-  }
+  },
+  testnet: true
 } as const satisfies Chain
