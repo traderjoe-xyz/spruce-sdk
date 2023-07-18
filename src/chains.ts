@@ -14,8 +14,8 @@ export const avalancheSpruce = {
     default: { http: ['https://subnets.avax.network/insti-1/testnet/rpc'] }
   },
   blockExplorers: {
-    etherscan: { name: 'SnowTrace', url: 'https://snowtrace.io' },
-    default: { name: 'SnowTrace', url: 'https://snowtrace.io' }
+    etherscan: { name: 'Explorer', url: 'https://testnet.evergreenspruce.io' },
+    default: { name: 'Explorer', url: 'https://testnet.evergreenspruce.io' }
   },
   contracts: {
     multicall3: {
